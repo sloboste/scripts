@@ -9,7 +9,10 @@ g_scripts_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 g_bin_dir="${HOME}/bin"
 mkdir -p $g_bin_dir
 
-scripts=("vpn-connect.sh" "vpn-disconnect.sh")
+scripts=(
+    "vpn-connect.sh" "vpn-disconnect.sh"
+    "monitor-connect.sh" "monitor-disconnect.sh"
+)
 for filename in "${scripts[@]}"
 do
     echo "Installing $filename..."
